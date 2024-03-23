@@ -1,6 +1,14 @@
-public class Banco {
-    private String nome;
+import java.util.ArrayList;
+import java.util.List;
 
+public class Banco {
+    
+    protected String nome;
+    private List<Conta> contas;
+
+    List<Cliente> clientes = new ArrayList<Cliente>();
+
+    //metodos getters e setters
     public String getNome(String nome){
         return nome;
     }
@@ -8,4 +16,13 @@ public class Banco {
     public void setNome(String nome){
         this.nome = nome;
     }
+
+    public List<Conta> getContas() {
+        return contas;
+    }
+
+    public void setContas(List<Conta> contas) {
+        this.contas = contas;
+    }
+
 }
