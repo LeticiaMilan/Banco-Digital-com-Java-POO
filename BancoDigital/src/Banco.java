@@ -25,4 +25,8 @@ public class Banco {
         this.contas = contas;
     }
 
+    public void mostrarClientes() {
+
+        System.out.println(clientes);
+    }
 }
